@@ -1,5 +1,15 @@
 @charset "utf-8";
 
+:root{
+  --boton-fondo: #FFBB00; 
+  --boton-texto: #000000;  
+  --boton-radio: 9999px; 
+  --boton-borde: 2px;   
+  --boton-padding: 0.6rem 1.2rem;
+  --boton-font: 16px/1 "Sofia Sans", Roboto, sans-serif;
+}
+
+
 /*
 * {
     font-family: "Ubuntu", sans-serif;
@@ -7,9 +17,9 @@
     margin: 0;
 }*/
 
-* {
-  /* {font-family: "Viga", sans-serif;*/
+* {font-family: "Sofia Sans", sans-serif;
   font-weight: 400;
+  color: #1a1a1a;
   font-style: normal;
   box-sizing: border-box;
   margin: 0;
@@ -106,18 +116,31 @@ header a {
 
 h1 {
     font-size: 3.5rem;
+    color: rgb(231, 228, 222);
 }
 
-h2 {
+.h2-cv {
     font-family: "Viga", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-weight: 400;
+    font-style: normal;
     display: flex;
     background-color: #ffbb00;
     padding: 10px;
     margin-top: 25px;
     justify-content: center;
     border-radius: 12px;
+}
+
+.h2-home {
+    font-family: "Viga", sans-serif;
+    color:#1a1a1a;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    padding: 5px;
+    margin-top: 25px;
+    justify-content: center;
 }
 
 h3 {
@@ -135,9 +158,10 @@ h4 {
 
 h5 {
     font-family: "Viga", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-weight: 400;
+    font-style: normal;
     font-size: 1rem;
+    color: rgb(231, 228, 222);
 }
 
 main {
@@ -156,11 +180,47 @@ main {
     align-items: center;
 }
 
-.botones-grandes {
+.tarjetas {
     display: flex;
     justify-content: space-around;
     width: 100%;
     align-items: center;
+    gap: 40px;
+}
+
+.tarjeta {
+    display: flex;
+    background-color: rgb(231, 228, 222);
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.boton {
+  display: inline-block;
+  background: var(--boton-fondo);
+  color: var(--boton-texto);
+  font: var(--boton-font);
+  font-weight: 600;
+  padding: var(--boton-padding);
+  border-radius: var(--boton-radio);
+  border: var(--boton-borde) solid var(--boton-texto);
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  margin: 30px;
+  transition: transform 120ms ease, box-shadow 120ms ease, filter 120ms ease;
+}
+
+.boton:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.boton:active{
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.12);
 }
 
 .fechas {
@@ -255,6 +315,7 @@ footer {
     width: 100%;
     align-items: flex-start;
     max-width: 1150px;
+    margin: 50px;
 }
 
 .links-footer {
