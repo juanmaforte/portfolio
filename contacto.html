@@ -13,54 +13,112 @@
 
 <body>
     <header>
-        <a href="index.html" class="logo-y-nombre">
-            <img src="img/favicon.svg" width="32px" height="32px" alt="logo" />
-            <h5>Juan Manuel Forte</h5>
-        </a>
-        <nav>
-            <a href="mi-cv.html">Mi CV</a>
-            <a href="trabajos.html">Trabajos</a>
-            <a href="contacto.html">Contacto</a>
-        </nav>
+        <div class="contenedor-header">
+            <a href="index.html" class="logo-y-nombre">
+                <img src="img/favicon.svg" width="32px" height="32px" alt="logo" />
+                <h5>Juan Manuel Forte</h5>
+            </a>
+            <nav>
+                <a href="mi-cv.html">Mi CV</a>
+                <a href="trabajos.html">Trabajos</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>    
     </header>
     <main>
+        <h1>Contactame</h1>
+        <h3>¿Tenés alguna pregunta? Escribime un mensaje</h3>
+        <section  class="grilla3060">
+            <section class="contacto-izq">
+                <h2>Información de contacto</h2>
+            </section>
+            <section class="contacto-der">
+                <form method="post" action="mailto:juanma02forte@hotmail.com?subject=Email enviado desde el formulario"
+                    target="_blank" enctype="text/plain">
+                    <div>
+                        <div class="campo">
+                            <label for="Nombre">Nombre: </label>
+                            <input type="text" name="Nombre" id="Nombre" maxlength="30" placeholder="Ej.: Juan"
+                                required>
+                        </div>
+                        <div class="campo">
+                            <label for="Apellido">Apellido: </label>
+                            <input type="text" name="Appelido" id="Apellido" maxlength="30" placeholder="Ej.: Gonzalez">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="campo">
+                            <label for="Email">Email: </label>
+                            <input type="email" name="Email" id="Email" maxlength="40" placeholder="Ej.: @gmail"
+                                required>
+                        </div>
+                        <div class="campo">
+                            <label for="Telefono">Número de Teléfono: </label>
+                            <input type="tel" name="Telefono" id="Telefono" maxlength="30"
+                                placeholder="Ej.: 11-1234-5678">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="campo">
+                            <p>Seleccionar Motivo</p>
+                            <div class="radiobutton">
+                                <label><input type="radio" name="motivo" value="trabajo" id="trabajo">Propuesta de trabajo</label>
+                                <label><input type="radio" name="motivo" value="consulta" id="consulta">Consulta general</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="campo">
+                            <label for="mensaje">Mensaje: </label>
+                            <textarea name="mensaje" id="mensaje">Escribí tu mensaje aquí</textarea>
+                        </div>
+                    </div>
+                    <div>
+                        <input class="boton" type="reset" value="Borrar Todo">
+                        <input class="boton" type="submit" value="Enviar Mensaje">
+                    </div>
+                </form>
+            </section>
+        </section>
     </main>
     <footer>
-        <h5>@Juan Manuel Forte, 2025</h5>
-        <section class="links-footer">
-            <ul>
-                <li>
-                    <h5>Mapa del sitio</h5>
-                </li>
-                <li>
-                    <a href="mi-cv.html">Mi CV</a>
-                </li>
-                <li>
-                    <a href="trabajos.html">Trabajos</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <h5>Mapa del sitio</h5>
-                </li>
-                <li>
-                    <img src="img/linkedin_logo.png" width="25px" heigh="25px" alt="Logo linkedin" />
-                    <a href="https://www.linkedin.com/in/juanmanuelforte/">Linkedin</a>
-                </li>
-                <li>
-                    <img src="img/spotify_logo.png" width="25px" heigh="25px" alt="Logo Spotify" />
-                    <a
-                        href="https://open.spotify.com/intl-es/album/5ESB9k8uZIxvv5B5M7W0Kl?si=IFUT2nIWQieeMrjZMBl7iA">Spotify</a>
-                </li>
-                <li>
-                    <img src="img/instagram_logo.png" width="25px" heigh="25px" alt="Logo Instagram" />
-                    <a href="https://www.instagram.com/juanma02forte">Instragram</a>
-                </li>
-            </ul>
-        </section>
+        <div class="contenedor-footer">
+            <h5>@Juan Manuel Forte, 2025</h5>
+            <section class="links-footer">
+                <ul>
+                    <li>
+                        <h5>Mapa del sitio</h5>
+                    </li>
+                    <li>
+                        <a href="mi-cv.html">Mi CV</a>
+                    </li>
+                    <li>
+                        <a href="trabajos.html">Trabajos</a>
+                    </li>
+                    <li>
+                        <a href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h5>Mis redes</h5>
+                    </li>
+                    <li>
+                        <img src="img/linkedin_logo.png" width="25px" heigh="25px" alt="Logo linkedin" />
+                        <a href="https://www.linkedin.com/in/juanmanuelforte/">Linkedin</a>
+                    </li>
+                    <li>
+                        <img src="img/spotify_logo.png" width="25px" heigh="25px" alt="Logo Spotify" />
+                        <a
+                            href="https://open.spotify.com/intl-es/album/5ESB9k8uZIxvv5B5M7W0Kl?si=IFUT2nIWQieeMrjZMBl7iA">Spotify</a>
+                    </li>
+                    <li>
+                        <img src="img/instagram_logo.png" width="25px" heigh="25px" alt="Logo Instagram" />
+                        <a href="https://www.instagram.com/juanma02forte">Instragram</a>
+                    </li>
+                </ul>
+            </section>
+        </div>
     </footer>
 </body>
 
