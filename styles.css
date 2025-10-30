@@ -178,7 +178,7 @@ h2 {
     background-color: var(--negro1);
     color: var(--amarillo1);
     padding: 10px;
-    margin-top: 25px;
+    /* margin-top: 25px; */
     justify-content: center;
     border-radius: 10px;
 }
@@ -264,6 +264,7 @@ main {
     align-items: center;
     gap: 40px;
     padding: 20px;
+    margin-top: 50px;
 }
 
 .tarjetas-vertical {
@@ -354,6 +355,11 @@ ul {
     gap: 40px;
     padding: 20px;
     background-color: var(--blanco1);
+    margin-top: 50px;
+}
+
+.grilla3060 article {
+    margin-bottom: 30px;
 }
 
 .izquierda {
@@ -369,17 +375,6 @@ ul {
     min-width: 600px;
     max-width: 775px;
 
-    text-wrap: balance;
-}
-
-.contacto-izq {
-    flex: 1;
-    background-color: var(--negro1);
-    border-radius: 10px;
-}
-
-.contacto-der {
-    flex: 1;
     text-wrap: balance;
 }
 
@@ -452,48 +447,6 @@ ul {
     font-weight: 400;
     font-style: italic;
     text-decoration: none;
-}
-
-
-form {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-}
-
-form div {
-    height: auto;
-    padding-right: 20px;
-    padding-left: 20px;
-    display: flex;
-}
-
-label {
-    display: block;
-    height: 30px;
-}
-
-input {
-    background-color: var(--blanco1);
-    width: 100%;
-    margin-bottom: 15%;
-}
-
-.campo {
-    display: flex;
-    flex-direction: column;
-}
-
-.radiobutton {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-input[type=radio] {
-    width: auto;
 }
 
 .container {
@@ -687,7 +640,7 @@ font-family: Viga;
 font-size: 2.5rem;
 font-style: normal;
 font-weight: 400;
-line-height: 2.6rem;
+line-height: 2.8rem;
 letter-spacing: 0.4px;
 padding: 0;
 margin: 0;
@@ -712,4 +665,78 @@ max-width: 722px;
     border: 5px solid var(--amarillo1);
     object-fit: cover;
     margin-bottom: 30px;
+}
+
+.contacto-izq {
+    flex: 1;
+    background-color: var(--negro1);
+    border-radius: 10px;
+}
+
+.contacto-der {
+    flex: 1;
+    /* text-wrap: balance; */
+}
+
+
+/* css del formulario */
+
+form {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+form div {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+}
+
+.campo p, label {
+    display: block;
+    height: 25px;
+}
+
+input {
+    background-color: var(--blanco1);
+    width: 100%;
+    margin-top: 15px;
+    border-bottom: 1px solid #000;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+.campo {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-bottom: 50px;
+    gap:unset;
+}
+
+.contacto-der textarea {
+    background-color: var(--blanco1);
+    width: 100%;
+    margin-bottom: 15%;
+    border-bottom: 1px solid #000;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    min-height: 100px;
+    resize: vertical;
+}
+
+.radiobutton {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 120px;
+}
+
+input[type=radio] {
+    width: auto;
+    margin-right: 8px;
 }
