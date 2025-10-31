@@ -290,25 +290,25 @@ main {
     margin: 0;
 }
 
-.trabajo img { 
+.trabajo img {
     padding-top: 20px;
 }
 
 .trabajo h4 {
-    color:#717171;
+    color: #717171;
     padding: 0;
     margin: 0;
     text-transform: uppercase;
     font-style: italic;
 }
 
-.trabajo div { 
+.trabajo div {
     width: 100%;
     display: flex;
     justify-content: flex-end;
 }
 
-.trabajo a { 
+.trabajo a {
     margin: 28px 0px;
 }
 
@@ -386,7 +386,7 @@ ul {
     line-height: 1.3rem;
 }
 
-.art-derecha h3{
+.art-derecha h3 {
     padding-top: 12px;
 }
 
@@ -560,7 +560,7 @@ ul {
 }
 
 .contenedor-texto h4 {
-    color:#717171;
+    color: #717171;
     padding: 0;
     margin: 0;
     text-transform: uppercase;
@@ -588,74 +588,89 @@ ul {
 
 /* animación splash */
 
-.jm-animacion{
+.jm-animacion {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
- }
+}
 
-  .logo-animado {
-  animation-name: jmfadeInUp;
-  animation-duration: 3500ms;
-  animation-fill-mode: forwards;
-  position: absolute;
-  margin-top: 40px;
-  }
+.logo-animado {
+    animation-name: jmfadeInUp;
+    animation-duration: 3500ms;
+    animation-fill-mode: forwards;
+    position: absolute;
+    margin-top: 40px;
+}
 
-  @keyframes jmfadeInUp {
-  0% {
-  opacity: 0;
-  transform: translate3d(0, 300%, 0);
-  }
-  25% {
-  opacity: 1;
-  transform: none;
-  }
-  75% {
-  opacity: 1;
-  transform: none;
-  }
-  100% {
-  opacity: 0;
-  transform: none;
-  }
-  } 
+@keyframes jmfadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 300%, 0);
+    }
 
-.h1-animacion, .h2-animacion, .mifoto {
-  opacity: 0;
-  animation: fotofadein 4s forwards;
-  animation-delay: 3500ms; /* empiezan cuando la otra se oculta */
+    25% {
+        opacity: 1;
+        transform: none;
+    }
+
+    75% {
+        opacity: 1;
+        transform: none;
+    }
+
+    100% {
+        opacity: 0;
+        transform: none;
+    }
+}
+
+.h1-animacion,
+.h2-animacion,
+.mifoto {
+    opacity: 0;
+    animation: fotofadein 4s forwards;
+    animation-delay: 3500ms;
+    /* empiezan cuando la otra se oculta */
 }
 
 @keyframes fotofadein {
-  0%, 10% { opacity: 0; }
-  20%, 100% { opacity: 1; }
+
+    0%,
+    10% {
+        opacity: 0;
+    }
+
+    20%,
+    100% {
+        opacity: 1;
+    }
 }
 
 .h1-animacion {
-color: var(--amarillo1);
-text-align: center;
-font-family: Viga;
-font-size: 2.5rem;
-font-style: normal;
-font-weight: 400;
-line-height: 2.8rem;
-letter-spacing: 0.4px;
-padding: 0;
-margin: 0;
+    color: var(--amarillo1);
+    text-align: center;
+    font-family: Viga;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.8rem;
+    letter-spacing: 0.4px;
+    padding: 0;
+    margin: 0;
 }
 
 .h2-animacion {
-color: var(--blanco1);
-text-align: center;
-font-family: Viga;
-font-size: 1.3rem;
-font-style: normal;
-font-weight: 400;
-line-height: 2,08rem; /* 159.091% */
-letter-spacing: 0.2px;
-max-width: 722px;
+    color: var(--blanco1);
+    text-align: center;
+    font-family: Viga;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2, 08rem;
+    /* 159.091% */
+    letter-spacing: 0.2px;
+    max-width: 722px;
 }
 
 .mifoto {
@@ -671,10 +686,52 @@ max-width: 722px;
     flex: 1;
     background-color: var(--negro1);
     border-radius: 10px;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.info-contacto {
+    display:flex;
+    flex-direction: column;
+    gap:5px;
+}
+
+.info-contacto h3, .contacto-izq h3 {
+    color: var(--blanco1);
+    font-family: "Sofia Sans";
+    font-size: 1.15rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.9rem;
+}
+
+.contacto-izq div {
+    display:flex;
+    flex-direction: column;
+    /* gap:5px; */
+    align-items: center;
+}
+
+.contacto-izq h4 {
+    color: #8d8d8d;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.redes-contacto, .info-contacto li {
+    display:flex;
+    gap: 15px;
+    align-items: center;
 }
 
 .contacto-der {
     flex: 1;
+    padding-top: 40px;
     /* text-wrap: balance; */
 }
 
@@ -694,7 +751,8 @@ form div {
     width: 100%;
 }
 
-.campo p, label {
+.campo p,
+label {
     display: block;
     height: 25px;
 }
@@ -714,7 +772,7 @@ input {
     flex: 1;
     flex-direction: column;
     margin-bottom: 50px;
-    gap:unset;
+    gap: unset;
 }
 
 .contacto-der textarea {
