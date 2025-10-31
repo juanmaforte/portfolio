@@ -754,9 +754,9 @@ input[type=radio] {
     margin-right: 8px;
 }
 
-/* responsive */
+/* responsive mobile */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
 
     .contenedor-header {
         display: flex;
@@ -864,6 +864,53 @@ input[type=radio] {
         flex-direction: column;
         width: 100%;
         gap:20px;
+    }
+}
+
+/* responsive tablet */
+
+@media screen and (min-width: 751px) and (max-width: 1150px) {
+
+    .contenedor-header {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .tarjetas {
+        padding: 2%;
+        gap: 2%;
+    }
+
+    .tarjeta {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        height: 215px;
+        padding-left: 5px;
+        padding-right: 5px;
+        justify-content: space-between;
+    }
+
+    .contenedor-footer {
+        padding: 2%;
+    }
+
+    .contenedor-footer h5 {
+        font-size: 1.3rem;
+    }
+
+    .h2-home {
+        font-size: 1.6rem;
+    }
+
+    p {
+        text-align: center;
+        font-size: 1.1rem;
+
+    }
+
+    .boton {
+        font-size: 1.2rem;
     }
 }
 
