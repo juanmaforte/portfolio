@@ -7,7 +7,7 @@
     --boton-borde: 2px;
     --boton-padding: 0.6rem 1.2rem;
     --boton-font: 16px/1 "Sofia Sans", Roboto, sans-serif;
-    --negro1: #1a1a1a;
+    --negro1: #1d1d1b;
     --amarillo1: #FFBB00;
     --blanco1: rgb(231, 228, 222);
 }
@@ -667,8 +667,7 @@ ul {
     font-size: 1.3rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 2, 08rem;
-    /* 159.091% */
+    line-height: 1.8rem;
     letter-spacing: 0.2px;
     max-width: 722px;
 }
@@ -694,12 +693,13 @@ ul {
 }
 
 .info-contacto {
-    display:flex;
+    display: flex;
     flex-direction: column;
-    gap:5px;
+    gap: 5px;
 }
 
-.info-contacto h3, .contacto-izq h3 {
+.info-contacto h3,
+.contacto-izq h3 {
     color: var(--blanco1);
     font-family: "Sofia Sans";
     font-size: 1.15rem;
@@ -709,7 +709,7 @@ ul {
 }
 
 .contacto-izq div {
-    display:flex;
+    display: flex;
     flex-direction: column;
     /* gap:5px; */
     align-items: center;
@@ -723,8 +723,9 @@ ul {
     font-style: italic;
 }
 
-.redes-contacto, .info-contacto li {
-    display:flex;
+.redes-contacto,
+.info-contacto li {
+    display: flex;
     gap: 15px;
     align-items: center;
 }
@@ -797,4 +798,113 @@ input {
 input[type=radio] {
     width: auto;
     margin-right: 8px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .contenedor-header {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        font-size: 1.7rem;
+    }
+
+    .contenedor-header img,.footer-redes img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .contenedor-header nav {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .contenedor-header h5 {
+        display: none;
+    }
+
+    .h1-animacion {
+        font-size: 3rem;
+        line-height: 3.4rem;
+    }
+
+    .h2-animacion {
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        font-weight: 350;
+
+    }
+
+    .hero {
+        display: flex;
+        align-items: center;
+        margin-bottom: 80px;
+        margin-top: 40px;
+    }
+
+    .tarjetas {
+        display: flex;
+        align-items: stretch;
+        width: 100%;
+        gap: 10px;
+        padding: 2%;
+        flex-direction: column;
+    }
+
+    .tarjeta {
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+
+    .h2-home {
+        font-size: 2.2rem;
+    }
+
+    p {
+        text-align: center;
+        font-size: 1.5rem;
+
+    }
+
+    .boton {
+        font-size: 1.8rem;
+    }
+
+    .contenedor-footer {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap: 10px;
+        padding: 2%;
+        flex-direction: column;
+    }
+
+    .contenedor-footer h5 {
+        font-size: 1.5rem;
+
+    }
+
+    .footer-mapa {
+        display: none;
+    }
+
+    .links-footer a,
+    .links-footer h5 {
+        display: none;
+    }
+
+    .links-footer ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .links-footer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap:20px;
+    }
 }
