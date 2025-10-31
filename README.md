@@ -1,6 +1,6 @@
 PORTFOLIO - JUAN MANUEL FORTE
-El sitio está pensado como una carta de presentación visual, donde se reúnen algunos de mis trabajos 
-realizados durante la carrera y aplicando los conocimientos adquiridos en la materia de HTML y CSS.
+El sitio está pensado como una carta de presentación donde se reúnen algunos de mis trabajos 
+realizados durante la carrera y aplicando los conocimientos adquiridos en HTML y CSS.
 
 ------ Estructura del sitio ------
 El portfolio está dividido en cuatro secciones principales:
